@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c24828b3-e5a9-4a12-a8c2-5a971be899e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/java/org/ar/atomix/fighters/AtomixFighterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/FighterBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-fighter/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-fighter/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-fighter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-fighter/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-fighter/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-fighter/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/judge/AtomixJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/judge/AtomixJudge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ar/atomix/fighters/judge/AtomixJudgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ar/atomix/fighters/judge/AtomixJudgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixViewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixViewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Fighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/service/FightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/service/FightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.3_1/libexec" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="excludeTargetFolder" value="false" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ocTo9zAlZsGifpQ7vNptNymZYT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtomixJudgeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="atomix-judge" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.atomix.fighters.judge.AtomixJudgeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c24828b3-e5a9-4a12-a8c2-5a971be899e8" name="Default Changelist" comment="" />
+      <created>1613585050530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613585050530</updated>
+      <workItem from="1613585053983" duration="595000" />
+      <workItem from="1613591130438" duration="7779000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="749" key="GridCell.Tab.0.bottom" timestamp="1613695300206">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293893" />
+    <state width="1398" height="749" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695300206" />
+    <state width="1398" height="749" key="GridCell.Tab.0.center" timestamp="1613695300202">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293887" />
+    <state width="1398" height="749" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613695300202" />
+    <state width="1398" height="749" key="GridCell.Tab.0.left" timestamp="1613695300199">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293883" />
+    <state width="1398" height="749" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613695300199" />
+    <state width="1398" height="749" key="GridCell.Tab.0.right" timestamp="1613695300204">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293890" />
+    <state width="1398" height="749" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613695300204" />
+    <state width="1398" height="749" key="GridCell.Tab.1.bottom" timestamp="1613695300213">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293820" />
+    <state width="1398" height="749" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695300213" />
+    <state width="1398" height="749" key="GridCell.Tab.1.center" timestamp="1613695300209">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293813" />
+    <state width="1398" height="749" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1613695300209" />
+    <state width="1398" height="749" key="GridCell.Tab.1.left" timestamp="1613695300208">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293810" />
+    <state width="1398" height="749" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1613695300208" />
+    <state width="1398" height="749" key="GridCell.Tab.1.right" timestamp="1613695300211">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293816" />
+    <state width="1398" height="749" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1613695300211" />
+    <state width="1398" height="749" key="GridCell.Tab.2.bottom" timestamp="1613695300220">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293843" />
+    <state width="1398" height="749" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695300220" />
+    <state width="1398" height="749" key="GridCell.Tab.2.center" timestamp="1613695300216">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.2.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293835" />
+    <state width="1398" height="749" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1613695300216" />
+    <state width="1398" height="749" key="GridCell.Tab.2.left" timestamp="1613695300215">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.2.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293831" />
+    <state width="1398" height="749" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1613695300215" />
+    <state width="1398" height="749" key="GridCell.Tab.2.right" timestamp="1613695300218">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1038" height="345" key="GridCell.Tab.2.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613673293839" />
+    <state width="1398" height="749" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1613695300218" />
+    <state x="1578" y="-434" key="NewModule_or_Project.wizard" timestamp="1613594184384">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state x="1578" y="-434" key="NewModule_or_Project.wizard/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613594184384" />
+  </component>
+</project>

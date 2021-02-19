@@ -1,0 +1,5 @@
+org/ar/atomix/publisher/AtomixChangeEvent.class
+org/ar/atomix/publisher/AtomixPublisher.class
+org/ar/atomix/publisher/AtomixPublisherApplication.class
+org/ar/atomix/publisher/AtomixChangeEvent$AtomixChangeEventBuilder.class
+org/ar/atomix/publisher/Type.class

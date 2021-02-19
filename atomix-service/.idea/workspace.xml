@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="975c6343-5032-410c-accc-ada439e9933d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/java/org/ar/atomix/fighters/AtomixFighterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/FighterBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-judge/src/main/java/org/ar/atomix/fighters/judge/AtomixJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-judge/src/main/java/org/ar/atomix/fighters/judge/AtomixJudge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-judge/src/test/java/org/ar/atomix/fighters/judge/AtomixJudgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-judge/src/test/java/org/ar/atomix/fighters/judge/AtomixJudgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixViewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixViewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Fighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/service/FightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/service/FightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.3_1/libexec" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="excludeTargetFolder" value="false" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ocSw6SCLlKx3JKgGWW4K9Ericg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtomixFighterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="atomix-fighter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.atomix.fighters.AtomixFighterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="975c6343-5032-410c-accc-ada439e9933d" name="Default Changelist" comment="" />
+      <created>1613584620536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613584620536</updated>
+      <workItem from="1613584625326" duration="1004000" />
+      <workItem from="1613591131800" duration="15840000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1038" height="497" key="GridCell.Tab.0.bottom" timestamp="1613696053196">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053196" />
+    <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695550390" />
+    <state width="1038" height="702" key="GridCell.Tab.0.bottom/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183263" />
+    <state width="1038" height="702" key="GridCell.Tab.0.bottom/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493547" />
+    <state width="1038" height="497" key="GridCell.Tab.0.center" timestamp="1613696053189">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053189" />
+    <state width="1398" height="299" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613695550377" />
+    <state width="1038" height="702" key="GridCell.Tab.0.center/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183257" />
+    <state width="1038" height="702" key="GridCell.Tab.0.center/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493539" />
+    <state width="1038" height="497" key="GridCell.Tab.0.left" timestamp="1613696053185">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053185" />
+    <state width="1398" height="299" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613695550374" />
+    <state width="1038" height="702" key="GridCell.Tab.0.left/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183254" />
+    <state width="1038" height="702" key="GridCell.Tab.0.left/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493535" />
+    <state width="1038" height="497" key="GridCell.Tab.0.right" timestamp="1613696053193">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053193" />
+    <state width="1398" height="299" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613695550386" />
+    <state width="1038" height="702" key="GridCell.Tab.0.right/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183260" />
+    <state width="1038" height="702" key="GridCell.Tab.0.right/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493543" />
+    <state width="1038" height="497" key="GridCell.Tab.1.bottom" timestamp="1613696053210">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053210" />
+    <state width="1398" height="299" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695550407" />
+    <state width="1038" height="702" key="GridCell.Tab.1.bottom/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216707" />
+    <state width="1038" height="702" key="GridCell.Tab.1.bottom/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493454" />
+    <state width="1038" height="497" key="GridCell.Tab.1.center" timestamp="1613696053203">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053203" />
+    <state width="1398" height="299" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1613695550401" />
+    <state width="1038" height="702" key="GridCell.Tab.1.center/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216691" />
+    <state width="1038" height="702" key="GridCell.Tab.1.center/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493446" />
+    <state width="1038" height="497" key="GridCell.Tab.1.left" timestamp="1613696053200">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053200" />
+    <state width="1398" height="299" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1613695550394" />
+    <state width="1038" height="702" key="GridCell.Tab.1.left/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216674" />
+    <state width="1038" height="702" key="GridCell.Tab.1.left/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493440" />
+    <state width="1038" height="497" key="GridCell.Tab.1.right" timestamp="1613696053207">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="497" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053207" />
+    <state width="1398" height="299" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1613695550404" />
+    <state width="1038" height="702" key="GridCell.Tab.1.right/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216700" />
+    <state width="1038" height="702" key="GridCell.Tab.1.right/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493450" />
+    <state width="1038" height="702" key="GridCell.Tab.2.bottom" timestamp="1613685825919">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825919" />
+    <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183298" />
+    <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493473" />
+    <state width="1038" height="702" key="GridCell.Tab.2.center" timestamp="1613685825911">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="702" key="GridCell.Tab.2.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825911" />
+    <state width="1038" height="702" key="GridCell.Tab.2.center/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183292" />
+    <state width="1038" height="702" key="GridCell.Tab.2.center/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493465" />
+    <state width="1038" height="702" key="GridCell.Tab.2.left" timestamp="1613685825907">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="702" key="GridCell.Tab.2.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825907" />
+    <state width="1038" height="702" key="GridCell.Tab.2.left/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183289" />
+    <state width="1038" height="702" key="GridCell.Tab.2.left/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493460" />
+    <state width="1038" height="702" key="GridCell.Tab.2.right" timestamp="1613685825915">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state width="1038" height="702" key="GridCell.Tab.2.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825915" />
+    <state width="1038" height="702" key="GridCell.Tab.2.right/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183295" />
+    <state width="1038" height="702" key="GridCell.Tab.2.right/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493469" />
+    <state x="1645" y="-649" width="670" height="676" key="search.everywhere.popup" timestamp="1613685274046">
+      <screen x="1440" y="-1100" width="1080" height="1920" />
+    </state>
+    <state x="1645" y="-649" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685274046" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>834</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>186</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>213</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>234</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>241</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>839</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/AtomixCluster.java</url>
+          <line>283</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/discovery/BootstrapDiscoveryProvider.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>498</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>504</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>506</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionService.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>916</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/AtomixConfig.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>917</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>920</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
+          <line>903</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/AtomixCluster.java</url>
+          <line>299</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/AtomixCluster.java</url>
+          <line>302</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultClusterMembershipService.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultClusterMembershipService.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
+          <line>59</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/protocol/SwimMembershipProtocol.java</url>
+          <line>758</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/protocol/SwimMembershipProtocol.java</url>
+          <line>769</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
+          <line>184</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
