@@ -7,15 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="atomix-judge" />
+        <module name="atomix-change-publisher" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="atomix-change-publisher" target="1.8" />
       <module name="atomix-judge" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="atomix-change-publisher" options="-parameters" />
       <module name="atomix-judge" options="-parameters" />
     </option>
   </component>

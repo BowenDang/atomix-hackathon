@@ -32,7 +32,8 @@ public class AtomixView {
         .withHost(host)
         .withPort(port)
         .withMembershipProvider(BootstrapDiscoveryProvider.builder()
-            .withNodes(localMember, publishMember).build())
+            .withNodes(localMember, publishMember)
+            .build())
         .build();
 
     atomix.start().join();

@@ -1,6 +1,9 @@
 /Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/controllers/ServiceViewController.java
 /Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/data/Status.java
 /Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/AtomixViewApplication.java
+/Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/websocket/ServerWebSocketConfig.java
+/Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/websocket/SchedulerConfig.java
+/Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/websocket/ServerWebSocketHandler.java
 /Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/service/DemoService.java
 /Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/data/ServiceNode.java
 /Users/bdang/source/atomix-hackathon/atomix-view/src/main/java/org/byc/atomix/service/AtomixView.java

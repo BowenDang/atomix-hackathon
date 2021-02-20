@@ -43,6 +43,8 @@ public class AtomixPublisher {
 
     Atomix atomix = Atomix.builder()
         .withClusterId("Service-Cluster")
+        .withHost(host)
+        .withPort(port)
         .withMemberId(publishMember.id())
         .withManagementGroup(RaftPartitionGroup.builder("system")
             .withMembers(publishMember)
@@ -86,12 +88,13 @@ public class AtomixPublisher {
           }
         });
 
-    scheduler.schedule(() -> publishIfDemoBegins(scheduler, changeRandomizer), 1, TimeUnit.SECONDS);
+    scheduler.schedule(() -> publishIfDemoBegins(scheduler, changeRandomizer), 2, TimeUnit.SECONDS);
   }
 
   private void publishRandomEvent(SecureRandom changeRandomizer) {
       int lUid = changeRandomizer.nextInt(30);
       String source = randomSources[changeRandomizer.nextInt(randomSources.length)];
+      logger.info("Publish event: lUid: " + lUid + ", source: " + source);
       node.getAtomicMap(LOCATION_CHANGE_EVENT_MAP)
           .async()
           .put(lUid, source);

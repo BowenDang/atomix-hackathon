@@ -2,6 +2,7 @@ package org.byc.atomix.service;
 
 import io.atomix.cluster.discovery.BootstrapDiscoveryProvider;
 import io.atomix.core.lock.AtomicLock;
+import io.atomix.core.map.AtomicMap;
 import io.atomix.core.map.AtomicMapEvent;
 import io.atomix.protocols.raft.MultiRaftProtocol;
 import io.atomix.protocols.raft.ReadConsistency;
@@ -23,7 +24,6 @@ public class AtomixService {
 
   public static final String REGISTRATION_SET_SERVICE_NAME = "serviceSet";
   public static final String LOCATION_CHANGE_EVENT_MAP = "locationChangeMap";
-  public static final String SERVICE_DATA_STORE = "Comment";
 
   private static final int MAX_ATTACK = 20;
   private static final Logger logger = Logger.getLogger(AtomixService.class.getName());
@@ -38,6 +38,8 @@ public class AtomixService {
 
   private final Random rand;
 
+  private final String dataStore;
+
   public AtomixService(@Value("${atomix.service.host}") String host,
                        @Value("${atomix.service.port}") int port,
                        @Value("${atomix.publisher.port}") int publisherPort,
@@ -47,6 +49,8 @@ public class AtomixService {
     this.nodeId = name + "-" + UUID.randomUUID();
 
     this.rand = new SecureRandom();
+
+    this.dataStore = name + "-datastore";
 
     Member localMember = Member.builder(nodeId)
         .withHost(host)
@@ -61,7 +65,7 @@ public class AtomixService {
 
     Atomix atomix = Atomix.builder()
         .withClusterId("Service-Cluster")
-        .withMemberId(name)
+        .withMemberId(nodeId)
         .withMembershipProvider(BootstrapDiscoveryProvider.builder()
         .withNodes(localMember, publishMember).build())
         .build();
@@ -70,14 +74,13 @@ public class AtomixService {
 
     node = atomix;
 
+    String lockName = serviceName + "-lock";
+    AtomicLock lock = node.getAtomicLock(lockName);
+    if (null == lock) {
+      MultiRaftProtocol protocol = MultiRaftProtocol.builder().withReadConsistency(ReadConsistency.LINEARIZABLE).build();
 
-    MultiRaftProtocol protocol = MultiRaftProtocol.builder()
-        .withReadConsistency(ReadConsistency.LINEARIZABLE)
-        .build();
-
-    AtomicLock lock = node.atomicLockBuilder(serviceName)
-        .withProtocol(protocol)
-        .build();
+      lock = node.atomicLockBuilder(lockName).withProtocol(protocol).build();
+    }
 
     this.lock = lock;
 
@@ -94,6 +97,7 @@ public class AtomixService {
 
     registerNewService();
 
+    createDataStoreIfAbsent();
 
     startListening();
   }
@@ -103,6 +107,20 @@ public class AtomixService {
     node.<String>getSet(REGISTRATION_SET_SERVICE_NAME)
         .async()
         .add(nodeId);
+
+  }
+
+  private void createDataStoreIfAbsent() {
+
+    if (null == node.getAtomicMap(dataStore)) {
+      MultiRaftProtocol protocol = MultiRaftProtocol.builder()
+          .withReadConsistency(ReadConsistency.LINEARIZABLE)
+          .build();
+
+      AtomicMap<Integer, String> map = node.<Integer, String>atomicMapBuilder(dataStore)
+          .withProtocol(protocol)
+          .build();
+    }
   }
 
   private void startListening() {
@@ -140,9 +158,9 @@ public class AtomixService {
 
   private void updateDataStore(int lUid, String val) {
     if ("DELETED".equals(val)) {
-      node.getAtomicMap(SERVICE_DATA_STORE).async().remove(lUid);
+      node.getAtomicMap(dataStore).async().remove(lUid);
     } else {
-      node.getAtomicMap(SERVICE_DATA_STORE).async().put(lUid, val);
+      node.getAtomicMap(dataStore).async().put(lUid, val);
     }
   }
 

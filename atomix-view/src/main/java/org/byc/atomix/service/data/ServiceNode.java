@@ -5,6 +5,7 @@ import java.util.Map;
 public class ServiceNode {
   String serviceName;
   String nodeId;
+  boolean alive;
   Map<Integer, String> sources;
 
   public String getServiceName() {
@@ -34,39 +35,66 @@ public class ServiceNode {
     return this;
   }
 
-  public static final class ServiceBuilder {
+  public boolean isAlive() {
+    return alive;
+  }
+
+  public ServiceNode setAlive(boolean alive) {
+    this.alive = alive;
+    return this;
+  }
+
+  public static final class ServiceNodeBuilder {
     String serviceName;
     String nodeId;
+    boolean alive;
     Map<Integer, String> sources;
 
-    private ServiceBuilder() {
+    private ServiceNodeBuilder() {
     }
 
-    public static ServiceBuilder aStatus() {
-      return new ServiceBuilder();
+    public static ServiceNodeBuilder aServiceNode() {
+      return new ServiceNodeBuilder();
     }
 
-    public ServiceBuilder serviceName(String serviceName) {
+    public ServiceNodeBuilder serviceName(String serviceName) {
       this.serviceName = serviceName;
       return this;
     }
 
-    public ServiceBuilder nodeId(String nodeId) {
+    public ServiceNodeBuilder nodeId(String nodeId) {
       this.nodeId = nodeId;
       return this;
     }
 
-    public ServiceBuilder sources(Map<Integer, String> sources) {
+    public ServiceNodeBuilder alive(boolean alive) {
+      this.alive = alive;
+      return this;
+    }
+
+    public ServiceNodeBuilder sources(Map<Integer, String> sources) {
       this.sources = sources;
       return this;
     }
 
     public ServiceNode build() {
-      ServiceNode status = new ServiceNode();
-      status.setServiceName(serviceName);
-      status.setNodeId(nodeId);
-      status.setSources(sources);
-      return status;
+      ServiceNode serviceNode = new ServiceNode();
+      serviceNode.setServiceName(serviceName);
+      serviceNode.setNodeId(nodeId);
+      serviceNode.setAlive(alive);
+      serviceNode.setSources(sources);
+      return serviceNode;
+    }
+
+    @Override
+    public String toString() {
+      final StringBuilder sb = new StringBuilder("ServiceNodeBuilder{");
+      sb.append("serviceName='").append(serviceName).append('\'');
+      sb.append(", nodeId='").append(nodeId).append('\'');
+      sb.append(", alive=").append(alive);
+      sb.append(", sources=").append(sources);
+      sb.append('}');
+      return sb.toString();
     }
   }
 }

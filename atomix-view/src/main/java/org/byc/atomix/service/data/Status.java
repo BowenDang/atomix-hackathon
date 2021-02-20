@@ -1,9 +1,13 @@
 package org.byc.atomix.service.data;
 
+import com.google.common.base.Objects;
+
 import java.util.List;
+import java.util.Map;
 
 public class Status {
     List<ServiceNode> nodes;
+    Map<Integer, String> event;
 
     public List<ServiceNode> getNodes() {
         return nodes;
@@ -14,8 +18,18 @@ public class Status {
         return this;
     }
 
+    public Map<Integer, String> getEvent() {
+        return event;
+    }
+
+    public Status setEvent(Map<Integer, String> event) {
+        this.event = event;
+        return this;
+    }
+
     public static final class StatusBuilder {
         List<ServiceNode> nodes;
+        Map<Integer, String> event;
 
         private StatusBuilder() {
         }
@@ -29,9 +43,15 @@ public class Status {
             return this;
         }
 
+        public StatusBuilder event(Map<Integer, String> event) {
+            this.event = event;
+            return this;
+        }
+
         public Status build() {
             Status status = new Status();
             status.setNodes(nodes);
+            status.setEvent(event);
             return status;
         }
     }

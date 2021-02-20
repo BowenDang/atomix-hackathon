@@ -1,6 +1,7 @@
 package org.byc.atomix.service.controllers;
 
 import org.byc.atomix.service.data.ServiceNode;
+import org.byc.atomix.service.data.Status;
 import org.byc.atomix.service.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,12 +19,12 @@ public class ServiceViewController {
 
   @GetMapping
   public String getMainPage() {
-    return "";
+    return "index.html";
   }
 
   @GetMapping("status")
   @ResponseBody
-  public ServiceNode getNodeStatus() {
+  public Status getNodeStatus() {
 
     return demoService.getStatus();
   }

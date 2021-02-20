@@ -1,8 +1,11 @@
+org/byc/atomix/service/websocket/ServerWebSocketConfig.class
+org/byc/atomix/service/websocket/SchedulerConfig.class
+org/byc/atomix/service/data/Status$StatusBuilder.class
+org/byc/atomix/service/AtomixViewApplication.class
 org/byc/atomix/service/service/DemoService.class
 org/byc/atomix/service/data/Status.class
 org/byc/atomix/service/AtomixView.class
+org/byc/atomix/service/data/ServiceNode$ServiceNodeBuilder.class
 org/byc/atomix/service/data/ServiceNode.class
 org/byc/atomix/service/controllers/ServiceViewController.class
-org/byc/atomix/service/data/Status$StatusBuilder.class
-org/byc/atomix/service/AtomixViewApplication.class
-org/byc/atomix/service/data/ServiceNode$ServiceBuilder.class
+org/byc/atomix/service/websocket/ServerWebSocketHandler.class

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/atomix-judge.iml" filepath="$PROJECT_DIR$/atomix-judge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atomix-change-publisher.iml" filepath="$PROJECT_DIR$/atomix-change-publisher.iml" />
     </modules>
   </component>
 </project>

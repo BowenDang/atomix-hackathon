@@ -2,24 +2,150 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="975c6343-5032-410c-accc-ada439e9933d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/java/org/ar/atomix/fighters/AtomixFighterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-fighter-1/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/FighterBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ar/atomix/fighters/AtomixFighterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-judge/src/main/java/org/ar/atomix/fighters/judge/AtomixJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-judge/src/main/java/org/ar/atomix/fighters/judge/AtomixJudge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-judge/src/test/java/org/ar/atomix/fighters/judge/AtomixJudgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-judge/src/test/java/org/ar/atomix/fighters/judge/AtomixJudgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixViewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/AtomixViewApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Fighter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/data/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/service/FightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/ar/atomix/fighters/service/FightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/websocket/SchedulerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/websocket/ServerWebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/websocket/ServerWebSocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/resources/static/js/atomix-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atomix-view/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/data/partitions/1/.data-partition-1.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/data/partitions/1/data-partition-1-1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/data/partitions/1/data-partition-1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/data/partitions/1/data-partition-1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/system/partitions/1/.system-partition-1.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/system/partitions/1/system-partition-1-1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/system/partitions/1/system-partition-1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.data/system/partitions/1/system-partition-1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/atomix-change-publisher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/atomix-change-publisher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/src/main/java/org/ar/atomix/publisher/AtomixChangeEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/src/main/java/org/ar/atomix/publisher/AtomixPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/src/main/java/org/ar/atomix/publisher/AtomixPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/src/main/java/org/ar/atomix/publisher/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/classes/org/ar/atomix/publisher/AtomixChangeEvent$AtomixChangeEventBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/classes/org/ar/atomix/publisher/AtomixChangeEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/classes/org/ar/atomix/publisher/AtomixPublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/target/classes/org/ar/atomix/publisher/AtomixPublisher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/classes/org/ar/atomix/publisher/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-change-publisher/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-change-publisher/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-hackathon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-hackathon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_4_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_reflectasm_1_11_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_config_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_cluster_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_primary_backup_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_primitive_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_raft_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_storage_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_atomix_atomix_utils_3_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_58_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_messaging_5_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_websocket_5_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/thriftCompiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atomix-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atomix-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atomix-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/atomix-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atomix-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/atomix-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/byc/atomix/service/AtomixService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/byc/atomix/service/AtomixService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/byc/atomix/service/AtomixServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/byc/atomix/service/AtomixServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/atomix-view.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/atomix-view.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/AtomixView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/AtomixView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/controllers/ServiceViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/controllers/ServiceViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/data/ServiceNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/data/ServiceNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/data/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/data/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/AtomixView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/AtomixView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/controllers/ServiceViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/controllers/ServiceViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode$ServiceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status$StatusBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status$StatusBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/service/DemoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/service/DemoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +205,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AtomixServiceApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -102,6 +228,13 @@
     <configuration name="AtomixFighterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="atomix-fighter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.atomix.fighters.AtomixFighterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtomixServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="atomix-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.byc.atomix.service.AtomixServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,6 +270,10 @@
       <updated>1613584620536</updated>
       <workItem from="1613584625326" duration="1004000" />
       <workItem from="1613591131800" duration="15840000" />
+      <workItem from="1613781445785" duration="3941000" />
+      <workItem from="1613798575829" duration="627000" />
+      <workItem from="1613801830341" duration="25000" />
+      <workItem from="1613801877581" duration="5033000" />
     </task>
     <servers />
   </component>
@@ -144,84 +281,84 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1038" height="497" key="GridCell.Tab.0.bottom" timestamp="1613696053196">
+    <state width="1038" height="702" key="GridCell.Tab.0.bottom" timestamp="1613806359710">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053196" />
+    <state width="1038" height="702" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806359710" />
     <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695550390" />
     <state width="1038" height="702" key="GridCell.Tab.0.bottom/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183263" />
     <state width="1038" height="702" key="GridCell.Tab.0.bottom/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493547" />
-    <state width="1038" height="497" key="GridCell.Tab.0.center" timestamp="1613696053189">
+    <state width="1038" height="702" key="GridCell.Tab.0.center" timestamp="1613806359702">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053189" />
+    <state width="1038" height="702" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806359702" />
     <state width="1398" height="299" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613695550377" />
     <state width="1038" height="702" key="GridCell.Tab.0.center/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183257" />
     <state width="1038" height="702" key="GridCell.Tab.0.center/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493539" />
-    <state width="1038" height="497" key="GridCell.Tab.0.left" timestamp="1613696053185">
+    <state width="1038" height="702" key="GridCell.Tab.0.left" timestamp="1613806359697">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053185" />
+    <state width="1038" height="702" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806359697" />
     <state width="1398" height="299" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613695550374" />
     <state width="1038" height="702" key="GridCell.Tab.0.left/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183254" />
     <state width="1038" height="702" key="GridCell.Tab.0.left/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493535" />
-    <state width="1038" height="497" key="GridCell.Tab.0.right" timestamp="1613696053193">
+    <state width="1038" height="702" key="GridCell.Tab.0.right" timestamp="1613806359706">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053193" />
+    <state width="1038" height="702" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806359706" />
     <state width="1398" height="299" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613695550386" />
     <state width="1038" height="702" key="GridCell.Tab.0.right/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183260" />
     <state width="1038" height="702" key="GridCell.Tab.0.right/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493543" />
-    <state width="1038" height="497" key="GridCell.Tab.1.bottom" timestamp="1613696053210">
+    <state width="1038" height="702" key="GridCell.Tab.1.bottom" timestamp="1613806311922">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053210" />
+    <state width="1038" height="702" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806311922" />
     <state width="1398" height="299" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695550407" />
     <state width="1038" height="702" key="GridCell.Tab.1.bottom/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216707" />
     <state width="1038" height="702" key="GridCell.Tab.1.bottom/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493454" />
-    <state width="1038" height="497" key="GridCell.Tab.1.center" timestamp="1613696053203">
+    <state width="1038" height="702" key="GridCell.Tab.1.center" timestamp="1613806311917">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053203" />
+    <state width="1038" height="702" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806311917" />
     <state width="1398" height="299" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1613695550401" />
     <state width="1038" height="702" key="GridCell.Tab.1.center/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216691" />
     <state width="1038" height="702" key="GridCell.Tab.1.center/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493446" />
-    <state width="1038" height="497" key="GridCell.Tab.1.left" timestamp="1613696053200">
+    <state width="1038" height="702" key="GridCell.Tab.1.left" timestamp="1613806311915">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053200" />
+    <state width="1038" height="702" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806311915" />
     <state width="1398" height="299" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1613695550394" />
     <state width="1038" height="702" key="GridCell.Tab.1.left/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216674" />
     <state width="1038" height="702" key="GridCell.Tab.1.left/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493440" />
-    <state width="1038" height="497" key="GridCell.Tab.1.right" timestamp="1613696053207">
+    <state width="1038" height="702" key="GridCell.Tab.1.right" timestamp="1613806311920">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="497" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613696053207" />
+    <state width="1038" height="702" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806311920" />
     <state width="1398" height="299" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1613695550404" />
     <state width="1038" height="702" key="GridCell.Tab.1.right/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682216700" />
     <state width="1038" height="702" key="GridCell.Tab.1.right/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493450" />
-    <state width="1038" height="702" key="GridCell.Tab.2.bottom" timestamp="1613685825919">
+    <state width="1038" height="702" key="GridCell.Tab.2.bottom" timestamp="1613806309200">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825919" />
+    <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806309200" />
     <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183298" />
     <state width="1038" height="702" key="GridCell.Tab.2.bottom/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493473" />
-    <state width="1038" height="702" key="GridCell.Tab.2.center" timestamp="1613685825911">
+    <state width="1038" height="702" key="GridCell.Tab.2.center" timestamp="1613806309192">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="702" key="GridCell.Tab.2.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825911" />
+    <state width="1038" height="702" key="GridCell.Tab.2.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806309192" />
     <state width="1038" height="702" key="GridCell.Tab.2.center/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183292" />
     <state width="1038" height="702" key="GridCell.Tab.2.center/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493465" />
-    <state width="1038" height="702" key="GridCell.Tab.2.left" timestamp="1613685825907">
+    <state width="1038" height="702" key="GridCell.Tab.2.left" timestamp="1613806309187">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="702" key="GridCell.Tab.2.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825907" />
+    <state width="1038" height="702" key="GridCell.Tab.2.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806309187" />
     <state width="1038" height="702" key="GridCell.Tab.2.left/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183289" />
     <state width="1038" height="702" key="GridCell.Tab.2.left/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493460" />
-    <state width="1038" height="702" key="GridCell.Tab.2.right" timestamp="1613685825915">
+    <state width="1038" height="702" key="GridCell.Tab.2.right" timestamp="1613806309195">
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
-    <state width="1038" height="702" key="GridCell.Tab.2.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613685825915" />
+    <state width="1038" height="702" key="GridCell.Tab.2.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613806309195" />
     <state width="1038" height="702" key="GridCell.Tab.2.right/0.23.1440.815/1440.-1077.1080.1897@1440.-1077.1080.1897" timestamp="1613682183295" />
     <state width="1038" height="702" key="GridCell.Tab.2.right/0.23.1440.815/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613677493469" />
     <state x="1645" y="-649" width="670" height="676" key="search.everywhere.popup" timestamp="1613685274046">
@@ -239,46 +376,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>224</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
           <line>237</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>186</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>213</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>221</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
           <line>234</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>241</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java</url>
@@ -287,28 +391,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
           <line>195</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
-          <line>839</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/AtomixCluster.java</url>
-          <line>283</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/discovery/BootstrapDiscoveryProvider.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/ar/atomix/fighters/AtomixFighter.java</url>
@@ -317,43 +401,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
-          <line>498</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
-          <line>504</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
-          <line>506</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionService.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
-          <line>916</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/AtomixConfig.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
           <line>917</line>
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
-          <line>920</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/Atomix.java</url>
@@ -361,65 +410,59 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/AtomixCluster.java</url>
-          <line>299</line>
-          <option name="timeStamp" value="32" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/AtomixCluster.java</url>
-          <line>302</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="34" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultClusterMembershipService.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="36" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultClusterMembershipService.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="37" />
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/impl/CorePrimitiveRegistry.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="39" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="41" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/impl/DefaultNodeDiscoveryService.java</url>
-          <line>59</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="42" />
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/PrimitiveFactory.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/protocol/SwimMembershipProtocol.java</url>
-          <line>758</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-cluster/3.1.8/atomix-cluster-3.1.8-sources.jar!/io/atomix/cluster/protocol/SwimMembershipProtocol.java</url>
-          <line>769</line>
-          <option name="timeStamp" value="44" />
+          <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix/3.1.8/atomix-3.1.8-sources.jar!/io/atomix/core/impl/CorePrimitiveRegistry.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/atomix/atomix-primitive/3.1.8/atomix-primitive-3.1.8-sources.jar!/io/atomix/primitive/partition/impl/DefaultPartitionGroupMembershipService.java</url>
-          <line>184</line>
-          <option name="timeStamp" value="45" />
+          <line>242</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/byc/atomix/service/AtomixService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
