@@ -41,9 +41,9 @@ public class DemoService {
         // wrap getMember NPE
       }
       ServiceNode.ServiceNodeBuilder nodeBuilder = ServiceNode.ServiceNodeBuilder.aServiceNode();
+      nodeBuilder.nodeId(nodeId);
       if (null != node) {
         nodeBuilder.alive(true);
-        nodeBuilder.nodeId(nodeId);
         String serviceName = nodeId.split("-")[0];
         nodeBuilder.serviceName(serviceName);
         String serviceDataStore = serviceName + "-datastore";

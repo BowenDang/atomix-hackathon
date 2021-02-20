@@ -65,6 +65,8 @@ public class AtomixService {
 
     Atomix atomix = Atomix.builder()
         .withClusterId("Service-Cluster")
+        .withHost(host)
+        .withPort(port)
         .withMemberId(nodeId)
         .withMembershipProvider(BootstrapDiscoveryProvider.builder()
         .withNodes(localMember, publishMember).build())
@@ -132,7 +134,7 @@ public class AtomixService {
 
   private void changeListener(AtomicMapEvent<Integer, String> event) {
 
-    logger.info("location change: lUid: " + event.key() + ", type: " + event.type());
+    //logger.info("location change: lUid: " + event.key() + ", type: " + event.type());
 
     if (AtomicMapEvent.Type.INSERT.equals(event.type()) || AtomicMapEvent.Type.UPDATE.equals(event.type())) {
       int lUid = event.key();
@@ -148,8 +150,10 @@ public class AtomixService {
   }
 
   private void processLocationChanges(int lUid, String val) {
-      boolean failure = 1 == rand.nextInt(1000);
+      logger.info("Location change {" + lUid + ":" + val + "} processed by: " + nodeId);
+      boolean failure = 1 == rand.nextInt(10);
       if (failure) {
+        logger.info("Location change {" + lUid + ":" + val + "} failed by: " + nodeId);
         throw new IllegalArgumentException("Node failed to process");
       } else {
         updateDataStore(lUid, val);

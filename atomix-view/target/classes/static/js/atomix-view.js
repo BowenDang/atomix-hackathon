@@ -3,7 +3,7 @@ function WebSocketTest() {
     if ("WebSocket" in window) {
         alert("WebSocket is supported by your Browser!");
 
-        webSocket = new WebSocket('ws://192.168.0.14:8080/websocket',
+        webSocket = new WebSocket('ws://localhost:8080/websocket',
             'subprotocol.demo.websocket');
 
         webSocket.onopen = function () {
