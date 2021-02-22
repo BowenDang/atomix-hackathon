@@ -1,12 +1,19 @@
 package org.ar.atomix.publisher;
 
+import com.google.common.collect.ImmutableList;
 import io.atomix.core.collection.CollectionEvent;
 import io.atomix.core.map.AsyncAtomicMap;
 import io.atomix.core.map.AtomicMap;
 import io.atomix.core.map.AtomicMapEvent;
+import io.atomix.core.value.AtomicValue;
+import io.atomix.core.workqueue.WorkQueue;
+import io.atomix.primitive.protocol.ProxyProtocol;
+import io.atomix.protocols.raft.MultiRaftProtocol;
+import io.atomix.protocols.raft.ReadConsistency;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.io.File;
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -29,6 +36,7 @@ public class AtomixPublisher {
 
   public static final String DEMO_STARTED = "demoStarted";
   public static final String LOCATION_CHANGE_EVENT_MAP = "locationChangeMap";
+  public static final String LOCATION_CHANGE_EVENT_WORK_QUEUE = "locationChangeWorkQueue";
 
   private final Atomix node;
 
@@ -54,6 +62,14 @@ public class AtomixPublisher {
             RaftPartitionGroup.builder("data")
                 .withNumPartitions(1)
                 .withMembers(publishMember)
+                .build(),
+            RaftPartitionGroup.builder("Comment-data")
+                .withNumPartitions(1)
+                .withMembers(publishMember)
+                .build(),
+            RaftPartitionGroup.builder("Review-data")
+                .withNumPartitions(1)
+                .withMembers(publishMember)
                 .build())
         .build();
 
@@ -71,33 +87,90 @@ public class AtomixPublisher {
   @PostConstruct
   public void buildResources() {
 
-    publishIfDemoBegins(Executors.newSingleThreadScheduledExecutor(), new SecureRandom());
+      buildPartitionQueue();
 
+      buildLocationChangeMap();
+
+      publishIfDemoBegins(Executors.newSingleThreadScheduledExecutor(), new SecureRandom());
+
+  }
+
+  private void buildPartitionQueue() {
+      node.workQueueBuilder("Comment-queue")
+          .withProtocol(
+              protocol("Comment-data"))
+          .build();
+      node.workQueueBuilder("Review-queue")
+          .withProtocol(
+              protocol("Review-data"))
+          .build();
+  }
+
+  private void buildLocationChangeMap() {
+      node.atomicMapBuilder(LOCATION_CHANGE_EVENT_MAP)
+          .withProtocol(protocol())
+          .build();
   }
 
 
   private void publishIfDemoBegins(ScheduledExecutorService scheduler, SecureRandom changeRandomizer) {
-
-    node.<Boolean>getAtomicValue(DEMO_STARTED)
-        .async()
+      AtomicValue<Boolean> started = node.<Boolean>atomicValueBuilder(DEMO_STARTED).withProtocol(protocol()).build();
+      started.async()
         .get()
         .whenComplete((isDemoStarted, throwable) -> {
 
           if (isDemoStarted) {
-            publishRandomEvent(changeRandomizer);
+            //publishRandomEvent(changeRandomizer);
+            publishRandomEventToQueue(changeRandomizer);
           }
         });
 
-    scheduler.schedule(() -> publishIfDemoBegins(scheduler, changeRandomizer), 2, TimeUnit.SECONDS);
+    scheduler.schedule(() -> publishIfDemoBegins(scheduler, changeRandomizer), 1000, TimeUnit.MILLISECONDS);
   }
 
   private void publishRandomEvent(SecureRandom changeRandomizer) {
       int lUid = changeRandomizer.nextInt(30);
       String source = randomSources[changeRandomizer.nextInt(randomSources.length)];
       logger.info("Publish event: lUid: " + lUid + ", source: " + source);
-      node.getAtomicMap(LOCATION_CHANGE_EVENT_MAP)
-          .async()
+      AtomicMap<Integer, String> map = node.<Integer, String>atomicMapBuilder(LOCATION_CHANGE_EVENT_MAP)
+          .withProtocol(protocol())
+          .build();
+      map.async()
           .put(lUid, source);
   }
+
+    private void publishRandomEventToQueue(SecureRandom changeRandomizer) {
+        int lUid = changeRandomizer.nextInt(30);
+        String source = randomSources[changeRandomizer.nextInt(randomSources.length)];
+        logger.info("Publish Queue event: lUid: " + lUid + ", source: " + source);
+        AtomicMap<Integer, String> map = node.<Integer, String>atomicMapBuilder(LOCATION_CHANGE_EVENT_MAP)
+            .withProtocol(protocol())
+            .build();
+        map.async()
+            .put(lUid, source);
+
+        WorkQueue<List<String>> commentQueue = node.<List<String>>workQueueBuilder("Comment-queue")
+            .withProtocol(
+                protocol("Comment-data"))
+            .build();
+        WorkQueue<List<String>> reviewQueue = node.<List<String>>workQueueBuilder("Review-queue")
+            .withProtocol(
+                protocol("Review-data"))
+            .build();
+        commentQueue.addOne(ImmutableList.of(String.valueOf(lUid), source));
+        reviewQueue.addOne(ImmutableList.of(String.valueOf(lUid), source));
+    }
+
+    private ProxyProtocol protocol() {
+        MultiRaftProtocol protocol = MultiRaftProtocol.builder("data")
+            .withReadConsistency(ReadConsistency.LINEARIZABLE).build();
+        return protocol;
+    }
+
+    private ProxyProtocol protocol(String group) {
+        MultiRaftProtocol protocol = MultiRaftProtocol.builder(group)
+            .withReadConsistency(ReadConsistency.LINEARIZABLE).build();
+        return protocol;
+    }
 
 }

@@ -1,5 +1,6 @@
 package org.byc.atomix.service.data;
 
+import java.util.List;
 import java.util.Map;
 
 public class ServiceNode {
@@ -7,6 +8,7 @@ public class ServiceNode {
   String nodeId;
   boolean alive;
   Map<Integer, String> sources;
+  Map<String, List<String>> workQueue;
 
   public String getServiceName() {
     return serviceName;
