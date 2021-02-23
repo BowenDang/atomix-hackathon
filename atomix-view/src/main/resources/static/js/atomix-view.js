@@ -40,8 +40,8 @@ function updateStatus(response) {
             }
         });
 
-        updateCluster(nodes, publisher, services);
         updateTable(nodes, publisher, services);
+        updateCluster(nodes, publisher, services);
     }
 }
 
@@ -54,13 +54,13 @@ function updateCluster(nodes, publisher, services) {
 
     for (const [location, source] of Object.entries(publisher)) {
         nodes.forEach((currentNode) => {
-            var svg = document.getElementById(currentNode.serviceName + '-cluster');
+            var serviceCluster = document.getElementById(currentNode.serviceName + '-cluster');
             var circle = document.getElementById(currentNode.nodeId + '+node');
 
             if (circle) {
                 if (currentNode.alive) {
                     if (currentNode.sources[location] === source || source === 'DELETED') {
-                        circle.setAttributeNS(null, 'fill', svg.getAttribute('service-color'));
+                        circle.setAttributeNS(null, 'fill', serviceCluster.getAttribute('service-color'));
                     } else {
                         circle.setAttributeNS(null, 'fill', 'red');
                     }
@@ -68,19 +68,28 @@ function updateCluster(nodes, publisher, services) {
                     circle.setAttributeNS(null, 'fill', '#dddddd');
                 }
             } else if (!circle && currentNode.serviceName) {
-                var x = Number(svg.getAttribute('last-x'));
-                var y = Number(svg.getAttribute('last-y'));
-                y = x + 75 < (clusterCanvas.offsetWidth / 2) - 50 ? y : y + 100;
-                x = x + 75 < (clusterCanvas.offsetWidth / 2) - 50 ? x + 75 : 75;
+                var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttributeNS(null, 'width', 100);
+                svg.setAttributeNS(null, 'height', 100);
+
                 var newCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-                newCircle.setAttributeNS(null, 'cx', x);
-                newCircle.setAttributeNS(null, 'cy', y);
-                newCircle.setAttributeNS(null, 'r', 25);
-                newCircle.setAttributeNS(null, 'fill', svg.getAttribute('service-color'));
+                newCircle.setAttributeNS(null, 'cx', '50%');
+                newCircle.setAttributeNS(null, 'cy', '50%');
+                newCircle.setAttributeNS(null, 'r', 35);
+                newCircle.setAttributeNS(null, 'fill', serviceCluster.getAttribute('service-color'));
                 newCircle.setAttributeNS(null, 'id', currentNode.nodeId + '+node');
-                svg.setAttributeNS(null, 'last-x', x);
-                svg.setAttributeNS(null, 'last-y', y);
                 svg.appendChild(newCircle);
+
+                var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                var nodeText = document.createTextNode(node.nodeId);
+                text.setAttributeNS(null, 'x', '50%');
+                text.setAttributeNS(null, 'y', '50%');
+                text.setAttributeNS(null, 'text-anchor', 'middle');
+                text.setAttributeNS(null, 'stroke', 'black');
+                text.appendChild(nodeText);
+                svg.appendChild(text);
+
+                serviceCluster.appendChild(svg);
             }
         });
     }
@@ -145,6 +154,7 @@ function updateTable(nodes, publisher, services) {
 function createNewCanvas(nodes, services) {
     var cluster = document.getElementById('cluster'),
         clusterCanvas = document.createElement('div'),
+        thead = document.getElementById('header'),
         usedColors = [];
 
     function getRandomColor(takenColors) {
@@ -162,32 +172,40 @@ function createNewCanvas(nodes, services) {
     }
 
     for (const [key, nodeList] of Object.entries(services)) {
-        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
-            x = 0,
-            y = 400 / 3,
+        var serviceCluster = document.createElement('div'),
             serviceColor = getRandomColor(usedColors);
 
         usedColors.push(serviceColor);
-        svg.setAttributeNS(null, 'service-color', serviceColor);
-        svg.setAttributeNS(null, 'id', key + '-cluster');
-        svg.setAttributeNS(null, 'width', cluster.offsetWidth / 2);
-        svg.setAttributeNS(null, 'height', 400);
+        serviceCluster.setAttribute('service-color', serviceColor);
+        serviceCluster.setAttribute('id', key + '-cluster');
+        serviceCluster.setAttribute('class', 'service-cluster');
 
         nodeList.forEach((node) => {
-            y = x + 75 < (cluster.offsetWidth / 2) - 50 ? y : y + 100;
-            x = x + 75 < (cluster.offsetWidth / 2) - 50 ? x + 75 : 75;
+            var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.setAttributeNS(null, 'width', 150);
+            svg.setAttributeNS(null, 'height', 150);
+
             var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-            circle.setAttributeNS(null, 'cx', x);
-            circle.setAttributeNS(null, 'cy', y);
-            circle.setAttributeNS(null, 'r', 25);
+            circle.setAttributeNS(null, 'cx', '50%');
+            circle.setAttributeNS(null, 'cy', '50%');
+            circle.setAttributeNS(null, 'r', 70);
             circle.setAttributeNS(null, 'fill', serviceColor);
             circle.setAttributeNS(null, 'id', node.nodeId + '+node');
-            svg.setAttributeNS(null, 'last-x', x);
-            svg.setAttributeNS(null, 'last-y', y);
             svg.appendChild(circle);
+
+            var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            var nodeText = document.createTextNode(node.nodeId);
+            text.setAttributeNS(null, 'x', '50%');
+            text.setAttributeNS(null, 'y', '50%');
+            text.setAttributeNS(null, 'text-anchor', 'middle');
+            text.setAttributeNS(null, 'stroke', 'black');
+            text.appendChild(nodeText);
+            svg.appendChild(text);
+
+            serviceCluster.appendChild(svg);
         });
 
-        clusterCanvas.appendChild(svg);
+        clusterCanvas.appendChild(serviceCluster);
     }
 
     clusterCanvas.setAttribute('id', 'cluster-canvas');
@@ -205,6 +223,7 @@ function createNewTable(nodes, publisher, services) {
     var trTopHead = document.createElement('tr');
     var trSubHead = document.createElement('tr');
 
+    thead.setAttribute('id', 'header');
     trTopHead.setAttribute('id', 'top-header');
     trSubHead.setAttribute('id', 'sub-header');
 
