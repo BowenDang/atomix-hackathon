@@ -63,6 +63,7 @@ function updateCluster(nodes, publisher, services) {
                         circle.setAttributeNS(null, 'fill', serviceCluster.getAttribute('service-color'));
                     } else {
                         circle.setAttributeNS(null, 'fill', 'red');
+                        circle.setAttributeNS(null, 'opacity', 1);
                     }
                 } else {
                     circle.setAttributeNS(null, 'fill', '#dddddd');
