@@ -77,21 +77,11 @@ public class DemoService {
         .entrySet().stream().collect(Collectors.toMap(Map.Entry::getKey, v -> v.getValue().value()));
     nodes.sort(Comparator.comparing(ServiceNode::getNodeId));
 
-    String q1State = atomixView.getNode().workQueueBuilder("Comment-queue")
-        .withProtocol(
-            protocol("Comment-data"))
-        .build().stats().toString();
-    String q2State = atomixView.getNode().workQueueBuilder("Review-queue")
-        .withProtocol(
-            protocol("Review-data"))
-        .build().stats().toString();
-
-    Map<String, String> queues = ImmutableMap.of("Comment", q1State, "Review", q2State);
 
     return Status.StatusBuilder.aStatus()
         .nodes(nodes)
         .event(events)
-        .queues(queues)
+        .queues(atomixView.getWorkQueue())
         .build();
   }
 
@@ -155,12 +145,6 @@ public class DemoService {
 
   private ProxyProtocol protocol() {
     MultiRaftProtocol protocol = MultiRaftProtocol.builder("data")
-        .withReadConsistency(ReadConsistency.LINEARIZABLE).build();
-    return protocol;
-  }
-
-  private ProxyProtocol protocol(String group) {
-    MultiRaftProtocol protocol = MultiRaftProtocol.builder(group)
         .withReadConsistency(ReadConsistency.LINEARIZABLE).build();
     return protocol;
   }

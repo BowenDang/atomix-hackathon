@@ -19,6 +19,8 @@
 
   <modules>
     <module>atomix-service</module>
+    <module>atomix-service-1</module>
+    <module>atomix-service-2</module>
     <module>atomix-change-publisher</module>
     <module>atomix-view</module>
   </modules>

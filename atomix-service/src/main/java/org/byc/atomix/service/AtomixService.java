@@ -124,7 +124,7 @@ public class AtomixService {
 
     registerNewWorker();
 
-    startListening();
+    //startListening();
   }
 
   private void registerNewService() {
@@ -149,7 +149,7 @@ public class AtomixService {
           } else {
             updateDataStore(lUid, val);
           }
-        }, 1, Executors.newSingleThreadExecutor());
+        }, 10, Executors.newFixedThreadPool(10));
   }
 
   private void createDataStoreIfAbsent() {
