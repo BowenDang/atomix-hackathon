@@ -61,6 +61,7 @@ function updateCluster(nodes, publisher, services) {
                 if (currentNode.alive) {
                     if (currentNode.sources[location] === source || source === 'DELETED') {
                         circle.setAttributeNS(null, 'fill', serviceCluster.getAttribute('service-color'));
+                        circle.setAttributeNS(null, 'opacity', 0.3);
                     } else {
                         circle.setAttributeNS(null, 'fill', 'red');
                         circle.setAttributeNS(null, 'opacity', 1);
@@ -118,6 +119,7 @@ function updateTable(nodes, publisher, services) {
             if (currentNodeData) {
                 if (currentNode.alive) {
                     currentNodeData.innerHTML = currentNode.sources && currentNode.sources[location] ? currentNode.sources[location] : '';
+                    currentNodeData.style.opacity = 1;
 
                     if (currentNode.sources[location] === source || source === 'DELETED') {
                         currentNodeData.style.backgroundColor = 'transparent';
@@ -128,6 +130,7 @@ function updateTable(nodes, publisher, services) {
                     var currentNodeHeader = document.getElementById(currentNode.nodeId);
                     currentNodeData.innerHTML = '';
                     currentNodeData.style.backgroundColor = '#dddddd';
+                    currentNodeData.style.opacity = 0.5;
                 }
             } else if (!currentNodeData && currentNode.serviceName) {
                 var trTopHead = document.getElementById(currentNode.serviceName + '-service');
@@ -157,7 +160,11 @@ function createNewCanvas(nodes, services) {
     var cluster = document.getElementById('cluster'),
         clusterCanvas = document.createElement('div'),
         thead = document.getElementById('header'),
-        usedColors = [];
+        usedColors = [
+            '#DDDDDD',
+            '#FF0000',
+            '#FFFF00'
+        ];
 
     function getRandomColor(takenColors) {
         var letters = '0123456789ABCDEF';
