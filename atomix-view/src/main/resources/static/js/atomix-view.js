@@ -69,19 +69,20 @@ function updateCluster(nodes, publisher, services) {
                 }
             } else if (!circle && currentNode.serviceName) {
                 var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-                svg.setAttributeNS(null, 'width', 100);
-                svg.setAttributeNS(null, 'height', 100);
+                svg.setAttributeNS(null, 'width', 150);
+                svg.setAttributeNS(null, 'height', 150);
 
                 var newCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 newCircle.setAttributeNS(null, 'cx', '50%');
                 newCircle.setAttributeNS(null, 'cy', '50%');
-                newCircle.setAttributeNS(null, 'r', 35);
+                newCircle.setAttributeNS(null, 'r', 70);
                 newCircle.setAttributeNS(null, 'fill', serviceCluster.getAttribute('service-color'));
+                newCircle.setAttributeNS(null, 'opacity', 0.3);
                 newCircle.setAttributeNS(null, 'id', currentNode.nodeId + '+node');
                 svg.appendChild(newCircle);
 
                 var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-                var nodeText = document.createTextNode(node.nodeId);
+                var nodeText = document.createTextNode(currentNode.nodeId);
                 text.setAttributeNS(null, 'x', '50%');
                 text.setAttributeNS(null, 'y', '50%');
                 text.setAttributeNS(null, 'text-anchor', 'middle');
@@ -190,6 +191,7 @@ function createNewCanvas(nodes, services) {
             circle.setAttributeNS(null, 'cy', '50%');
             circle.setAttributeNS(null, 'r', 70);
             circle.setAttributeNS(null, 'fill', serviceColor);
+            circle.setAttributeNS(null, 'opacity', 0.3);
             circle.setAttributeNS(null, 'id', node.nodeId + '+node');
             svg.appendChild(circle);
 
@@ -241,17 +243,17 @@ function createNewTable(nodes, publisher, services) {
     locationHeader.setAttribute('rowspan', 2);
     trTopHead.appendChild(locationHeader);
 
-    var order;
+    var order = 0;
     for (const [key, nodeList] of Object.entries(services)) {
         var serviceHeader = document.createElement('th');
         var serviceNameText = document.createTextNode(key);
 
         serviceHeader.setAttribute('colspan', nodeList.length);
         serviceHeader.setAttribute('id', key + '-service');
-        serviceHeader.setAttribute('order', order ? order + nodeList.length : 0);
+        serviceHeader.setAttribute('order', order + nodeList.length);
         serviceHeader.appendChild(serviceNameText);
         trTopHead.appendChild(serviceHeader);
-        order = order ? order + nodeList.length : nodeList.length;
+        order = order + nodeList.length;
 
         // Sub Header
         nodeList.forEach((currentNode) => {
