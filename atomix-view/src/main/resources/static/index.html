@@ -2,7 +2,6 @@
 <html>
     <head>
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="js/atomix-view.js"></script>
 
         <style>
@@ -24,8 +23,12 @@
                 width: 100%;
             }
 
-            table .top-header {
+            table #top-header {
                 font-size: 22px;
+            }
+
+            table .node-name {
+                font-weight: bold;
             }
 
             td, th {
@@ -36,13 +39,28 @@
             th {
                 text-align: center;
             }
+
+            .publisher {
+                animation-name: disappear;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            /* Animations */
+            @keyframes disappear {
+                0%   {background-color: yellow; opacity: 1;}
+                25%  {background-color: yellow; opacity: 0.75;}
+                50%  {background-color: yellow; opacity: 0.5;}
+                75%  {background-color: yellow; opacity: 0.25;}
+                100% {background-color: yellow; opacity: 0;}
+            }
         </style>
     </head>
 
     <body>
         <div>
-            <!-- <a onclick="start();">Start</a> -->
-            <!-- <a onclick="restart();">Restart</a> -->
+            <button onclick="start();">Start</button>
+            <button onclick="restart();">Restart</button>
         </div>
 
         <div class="example" id="cluster"></div>

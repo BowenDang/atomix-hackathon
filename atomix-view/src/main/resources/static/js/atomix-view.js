@@ -27,64 +27,176 @@ function updateStatus(response) {
     if (response) {
         var status = JSON.parse(response),
             nodes = status.nodes,
-            publisher = status.event;
+            publisher = status.event,
+            services = {};
 
-        updateCluster();
-        updateTable(nodes, publisher);
+        nodes.forEach((node) => {
+            if (node.serviceName) {
+                if (!services[node.serviceName]) {
+                    services[node.serviceName] = [];
+                }
+
+                services[node.serviceName].push(node);
+            }
+        });
+
+        updateCluster(nodes, publisher, services);
+        updateTable(nodes, publisher, services);
     }
 }
 
-function updateCluster(nodes, publisher) {
-    var clusterTable = document.getElementById('cluster-table');
-
-    if (!clusterTable) {
-
-    }
-}
-
-function updateTable(nodes, publisher) {
-    if (!document.getElementById('node-table')) {
-        createNewTable(nodes, publisher);
+function updateCluster(nodes, publisher, services) {
+    if (!document.getElementById('cluster-canvas')) {
+        createNewCanvas(nodes, services);
     }
 
-    var nodeTable = document.getElementById('node-table');
+    var clusterCanvas = document.getElementById('cluster-canvas');
 
     for (const [location, source] of Object.entries(publisher)) {
-        // var publisherData = document.getElementById(location);
-
-        // if (publisherData) {
-        //     publisherData.innerHTML = source || '';
-        // }
-
         nodes.forEach((currentNode) => {
-            if (currentNode.alive) {
-                var currentNodeData = document.getElementById(currentNode.nodeId + '+' + location);
-                currentNodeData.innerHTML = currentNode.sources && currentNode.sources[location] ? currentNode.sources[location] : '';
-                
-                if (currentNode.sources[location] === source || source === 'DELETED') {
-                    currentNodeData.style.backgroundColor = 'transparent';
+            var svg = document.getElementById(currentNode.serviceName + '-cluster');
+            var circle = document.getElementById(currentNode.nodeId + '+node');
+
+            if (circle) {
+                if (currentNode.alive) {
+                    if (currentNode.sources[location] === source || source === 'DELETED') {
+                        circle.setAttributeNS(null, 'fill', svg.getAttribute('service-color'));
+                    } else {
+                        circle.setAttributeNS(null, 'fill', 'red');
+                    }
                 } else {
-                    currentNodeData.style.backgroundColor = 'red';
+                    circle.setAttributeNS(null, 'fill', '#dddddd');
                 }
+            } else if (!circle && currentNode.serviceName) {
+                var x = Number(svg.getAttribute('last-x'));
+                var y = Number(svg.getAttribute('last-y'));
+                y = x + 75 < (clusterCanvas.offsetWidth / 2) - 50 ? y : y + 100;
+                x = x + 75 < (clusterCanvas.offsetWidth / 2) - 50 ? x + 75 : 75;
+                var newCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                newCircle.setAttributeNS(null, 'cx', x);
+                newCircle.setAttributeNS(null, 'cy', y);
+                newCircle.setAttributeNS(null, 'r', 25);
+                newCircle.setAttributeNS(null, 'fill', svg.getAttribute('service-color'));
+                newCircle.setAttributeNS(null, 'id', currentNode.nodeId + '+node');
+                svg.setAttributeNS(null, 'last-x', x);
+                svg.setAttributeNS(null, 'last-y', y);
+                svg.appendChild(newCircle);
             }
         });
     }
 }
 
-function createNewTable(nodes, publisher) {
-    var table = document.getElementById('table'),
-        newTable = document.createElement('table'),
-        services = {};
+function updateTable(nodes, publisher, services) {
+    if (!document.getElementById('node-table')) {
+        createNewTable(nodes, publisher, services);
+    }
 
-    nodes.forEach((node) => {
-        if (node.serviceName) {
-            if (!services[node.serviceName]) {
-                services[node.serviceName] = [];
-            }
+    for (const [location, source] of Object.entries(publisher)) {
+        var publisherData = document.getElementById('publisher-' + location);
 
-            services[node.serviceName].push(node);
+        if (publisherData && source !== publisherData.innerHTML) {
+            publisherData.innerHTML = source || '';
+            publisherData.classList.remove('publisher');
+            void publisherData.offsetWidth;
+            publisherData.classList.add('publisher');
         }
-    });
+
+        nodes.forEach((currentNode) => {
+            var currentNodeData = document.getElementById(currentNode.nodeId + '+' + location);
+
+            if (currentNodeData) {
+                if (currentNode.alive) {
+                    currentNodeData.innerHTML = currentNode.sources && currentNode.sources[location] ? currentNode.sources[location] : '';
+
+                    if (currentNode.sources[location] === source || source === 'DELETED') {
+                        currentNodeData.style.backgroundColor = 'transparent';
+                    } else {
+                        currentNodeData.style.backgroundColor = 'red';
+                    }
+                } else {
+                    var currentNodeHeader = document.getElementById(currentNode.nodeId);
+                    currentNodeData.innerHTML = '';
+                    currentNodeData.style.backgroundColor = '#dddddd';
+                }
+            } else if (!currentNodeData && currentNode.serviceName) {
+                var trTopHead = document.getElementById(currentNode.serviceName + '-service');
+                var order = Number(trTopHead.getAttribute('order'));
+
+                if (!document.getElementById(currentNode.nodeId)) {
+                    var trSubHead = document.getElementById('sub-header');
+                    var newNode = trSubHead.insertCell(order);
+                    newNode.innerHTML = currentNode.nodeId;
+                    trTopHead.setAttribute('colspan', order + 1);
+                    newNode.setAttribute('class', 'node-name');
+                    newNode.setAttribute('id', currentNode.nodeId);
+                    trTopHead.setAttribute('order', order + 1);
+                    order = order + 1;
+                }
+
+                var trbody = document.getElementById('location-' + location);
+                var newNodeData = trbody.insertCell(1 + order - 1);
+                newNodeData.innerHTML = currentNode.sources && currentNode.sources[location] ? currentNode.sources[location] : '';
+                newNodeData.setAttribute('id', currentNode.nodeId + '+' + location);
+            }
+        });
+    }
+}
+
+function createNewCanvas(nodes, services) {
+    var cluster = document.getElementById('cluster'),
+        clusterCanvas = document.createElement('div'),
+        usedColors = [];
+
+    function getRandomColor(takenColors) {
+        var letters = '0123456789ABCDEF';
+        var color;
+
+        while (!color || takenColors.includes(color)) {
+            color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+        }
+
+        return color;
+    }
+
+    for (const [key, nodeList] of Object.entries(services)) {
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
+            x = 0,
+            y = 400 / 3,
+            serviceColor = getRandomColor(usedColors);
+
+        usedColors.push(serviceColor);
+        svg.setAttributeNS(null, 'service-color', serviceColor);
+        svg.setAttributeNS(null, 'id', key + '-cluster');
+        svg.setAttributeNS(null, 'width', cluster.offsetWidth / 2);
+        svg.setAttributeNS(null, 'height', 400);
+
+        nodeList.forEach((node) => {
+            y = x + 75 < (cluster.offsetWidth / 2) - 50 ? y : y + 100;
+            x = x + 75 < (cluster.offsetWidth / 2) - 50 ? x + 75 : 75;
+            var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttributeNS(null, 'cx', x);
+            circle.setAttributeNS(null, 'cy', y);
+            circle.setAttributeNS(null, 'r', 25);
+            circle.setAttributeNS(null, 'fill', serviceColor);
+            circle.setAttributeNS(null, 'id', node.nodeId + '+node');
+            svg.setAttributeNS(null, 'last-x', x);
+            svg.setAttributeNS(null, 'last-y', y);
+            svg.appendChild(circle);
+        });
+
+        clusterCanvas.appendChild(svg);
+    }
+
+    clusterCanvas.setAttribute('id', 'cluster-canvas');
+    cluster.appendChild(clusterCanvas);
+}
+
+function createNewTable(nodes, publisher, services) {
+    var table = document.getElementById('table'),
+        newTable = document.createElement('table');
         
     newTable.setAttribute('id', 'node-table');
 
@@ -93,8 +205,16 @@ function createNewTable(nodes, publisher) {
     var trTopHead = document.createElement('tr');
     var trSubHead = document.createElement('tr');
 
-    trTopHead.setAttribute('class', 'top-header');
-    trSubHead.setAttribute('class', 'sub-header');
+    trTopHead.setAttribute('id', 'top-header');
+    trSubHead.setAttribute('id', 'sub-header');
+
+    // Append publisher service
+    var publisherHeader = document.createElement('th');
+    var publisherText = document.createTextNode('');
+    publisherHeader.appendChild(publisherText);
+    publisherHeader.setAttribute('rowspan', 2);
+    publisherHeader.style.border = 'none';
+    trTopHead.appendChild(publisherHeader);
 
     var locationHeader = document.createElement('th');
     var locationText = document.createTextNode('Locations');
@@ -102,26 +222,24 @@ function createNewTable(nodes, publisher) {
     locationHeader.setAttribute('rowspan', 2);
     trTopHead.appendChild(locationHeader);
 
-    // Append publisher service
-    // var publisherHeader = document.createElement('th');
-    // var publisherText = document.createTextNode('Publisher');
-    // publisherHeader.appendChild(publisherText);
-    // publisherHeader.setAttribute('rowspan', 2);
-    // trTopHead.appendChild(publisherHeader);
-    // mainHeaderColspan++;
-
+    var order;
     for (const [key, nodeList] of Object.entries(services)) {
         var serviceHeader = document.createElement('th');
         var serviceNameText = document.createTextNode(key);
 
         serviceHeader.setAttribute('colspan', nodeList.length);
+        serviceHeader.setAttribute('id', key + '-service');
+        serviceHeader.setAttribute('order', order ? order + nodeList.length : 0);
         serviceHeader.appendChild(serviceNameText);
         trTopHead.appendChild(serviceHeader);
+        order = order ? order + nodeList.length : nodeList.length;
 
         // Sub Header
         nodeList.forEach((currentNode) => {
-            var nodeHeader = document.createElement('th');
+            var nodeHeader = document.createElement('td');
             var nodeNameText = document.createTextNode(currentNode.nodeId);
+            nodeHeader.setAttribute('class', 'node-name');
+            nodeHeader.setAttribute('id', currentNode.nodeId);
             nodeHeader.appendChild(nodeNameText);
             trSubHead.appendChild(nodeHeader);
         });
@@ -136,18 +254,21 @@ function createNewTable(nodes, publisher) {
     for (const [location, source] of Object.entries(publisher)) {
         var trbody = document.createElement('tr')
 
+        // Publisher
+        var publisherData = document.createElement('td');
+        var publisherDataText = document.createTextNode(source);
+        publisherData.appendChild(publisherDataText);
+        publisherData.setAttribute('id', 'publisher-' + location);
+        publisherData.style.border = 'none';
+        publisherData.style.opacity = 0;
+        trbody.appendChild(publisherData);
+
         // Locations
         var locationData = document.createElement('td');
         var locationDataText = document.createTextNode(location);
         locationData.appendChild(locationDataText);
+        trbody.setAttribute('id', 'location-' + location);
         trbody.appendChild(locationData);
-
-        // Publisher
-        // var publisherData = document.createElement('td');
-        // var publisherDataText = document.createTextNode(source);
-        // publisherData.appendChild(publisherDataText);
-        // publisherData.setAttribute('id', location);
-        // trbody.appendChild(publisherData);
 
         for (const [key, nodeList] of Object.entries(services)) {
             nodeList.forEach((currentNode) => {
