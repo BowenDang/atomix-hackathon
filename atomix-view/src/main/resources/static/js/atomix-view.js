@@ -57,13 +57,15 @@ function updateTable(nodes, publisher) {
         // }
 
         nodes.forEach((currentNode) => {
-            var currentNodeData = document.getElementById(currentNode.nodeId + '+' + location);
-            currentNodeData.innerHTML = currentNode.sources[location] || '';
-            
-            if (currentNode.sources[location] === source || source === 'DELETED') {
-                currentNodeData.style.backgroundColor = 'transparent';
-            } else {
-                currentNodeData.style.backgroundColor = 'red';
+            if (currentNode.alive) {
+                var currentNodeData = document.getElementById(currentNode.nodeId + '+' + location);
+                currentNodeData.innerHTML = currentNode.sources && currentNode.sources[location] ? currentNode.sources[location] : '';
+                
+                if (currentNode.sources[location] === source || source === 'DELETED') {
+                    currentNodeData.style.backgroundColor = 'transparent';
+                } else {
+                    currentNodeData.style.backgroundColor = 'red';
+                }
             }
         });
     }
@@ -149,12 +151,14 @@ function createNewTable(nodes, publisher) {
 
         for (const [key, nodeList] of Object.entries(services)) {
             nodeList.forEach((currentNode) => {
-                // Node
-                var currentNodeData = document.createElement('td');
-                var currentNodeDataText = document.createTextNode('');
-                currentNodeData.appendChild(currentNodeDataText);
-                currentNodeData.setAttribute('id', currentNode.nodeId + '+' + location);
-                trbody.appendChild(currentNodeData);
+                if (currentNode.alive) {
+                    // Node
+                    var currentNodeData = document.createElement('td');
+                    var currentNodeDataText = document.createTextNode('');
+                    currentNodeData.appendChild(currentNodeDataText);
+                    currentNodeData.setAttribute('id', currentNode.nodeId + '+' + location);
+                    trbody.appendChild(currentNodeData);
+                }
             });
         }
 
