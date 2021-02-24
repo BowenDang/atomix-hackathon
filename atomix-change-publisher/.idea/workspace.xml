@@ -2,28 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c24828b3-e5a9-4a12-a8c2-5a971be899e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n3.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n1.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n3.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/data/partitions/1/.data-partition-1.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1-1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/data/partitions/1/data-partition-1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/system/partitions/1/.system-partition-1.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1-1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.data/system/partitions/1/system-partition-1.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ar/atomix/publisher/AtomixPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ar/atomix/publisher/AtomixPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/atomix-change-publisher-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/ar/atomix/publisher/AtomixPublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/ar/atomix/publisher/AtomixPublisher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/ar/atomix/publisher/AtomixPublisherApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/ar/atomix/publisher/AtomixPublisherApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/atomix-service.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/java/org/byc/atomix/service/AtomixService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/java/org/byc/atomix/service/AtomixService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n1.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n3.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s1n3.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n1.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n3.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/src/main/resources/application-s2n3.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-service/target/atomix-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/target/atomix-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-service/target/atomix-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/target/atomix-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-service/target/classes/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-service/target/classes/org/byc/atomix/service/AtomixService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/target/classes/org/byc/atomix/service/AtomixService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/atomix-view.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/atomix-view.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/websocket/ServerWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/src/main/java/org/byc/atomix/service/websocket/ServerWebSocketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/atomix-view-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/AtomixView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/AtomixView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/AtomixViewApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/AtomixViewApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/controllers/ServiceViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/controllers/ServiceViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode$ServiceNodeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode$ServiceNodeBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/ServiceNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status$StatusBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status$StatusBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/data/Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/service/DemoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/service/DemoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/websocket/SchedulerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/websocket/SchedulerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/websocket/ServerWebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/websocket/ServerWebSocketConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/websocket/ServerWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/org/byc/atomix/service/websocket/ServerWebSocketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../atomix-view/target/classes/static/js/atomix-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/../atomix-view/target/classes/static/js/atomix-view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/org/byc/atomix/service/AtomixService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/org/byc/atomix/service/AtomixService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/org/byc/atomix/service/AtomixService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/org/byc/atomix/service/AtomixServiceApplication.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +83,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ocTo9zAlZsGifpQ7vNptNymZYT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -136,6 +161,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AtomixJudgeApplication" />
+      <item itemvalue="Spring Boot.AtomixPublisherApplication" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -168,75 +197,99 @@
       <screen x="1440" y="-1100" width="1080" height="1920" />
     </state>
     <state x="1647" y="-331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613784928580" />
-    <state width="1038" height="552" key="GridCell.Tab.0.bottom" timestamp="1613856081487">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.0.bottom" timestamp="1614105030403">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.bottom/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030403" />
+    <state width="1878" height="403" key="GridCell.Tab.0.bottom/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095007311" />
     <state width="1038" height="552" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081487" />
     <state width="1398" height="749" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695300206" />
     <state width="1038" height="924" key="GridCell.Tab.0.bottom/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364989" />
-    <state width="1038" height="552" key="GridCell.Tab.0.center" timestamp="1613856081478">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.0.center" timestamp="1614105030397">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.center/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030397" />
+    <state width="1878" height="403" key="GridCell.Tab.0.center/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095007285" />
     <state width="1038" height="552" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081478" />
     <state width="1398" height="749" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613695300202" />
     <state width="1038" height="924" key="GridCell.Tab.0.center/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364979" />
-    <state width="1038" height="552" key="GridCell.Tab.0.left" timestamp="1613856081473">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.0.left" timestamp="1614105030394">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.left/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030394" />
+    <state width="1878" height="403" key="GridCell.Tab.0.left/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095007281" />
     <state width="1038" height="552" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081473" />
     <state width="1398" height="749" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613695300199" />
     <state width="1038" height="924" key="GridCell.Tab.0.left/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364974" />
-    <state width="1038" height="552" key="GridCell.Tab.0.right" timestamp="1613856081483">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.0.right" timestamp="1614105030400">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.right/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030400" />
+    <state width="1878" height="403" key="GridCell.Tab.0.right/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095007290" />
     <state width="1038" height="552" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081483" />
     <state width="1398" height="749" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613695300204" />
     <state width="1038" height="924" key="GridCell.Tab.0.right/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364984" />
-    <state width="1038" height="552" key="GridCell.Tab.1.bottom" timestamp="1613856081296">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.1.bottom" timestamp="1614105030171">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.1.bottom/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030171" />
+    <state width="1878" height="403" key="GridCell.Tab.1.bottom/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006780" />
     <state width="1038" height="552" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081296" />
     <state width="1398" height="749" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695300213" />
     <state width="1038" height="924" key="GridCell.Tab.1.bottom/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364899" />
-    <state width="1038" height="552" key="GridCell.Tab.1.center" timestamp="1613856081288">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.1.center" timestamp="1614105030163">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.1.center/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030163" />
+    <state width="1878" height="403" key="GridCell.Tab.1.center/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006769" />
     <state width="1038" height="552" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081288" />
     <state width="1398" height="749" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1613695300209" />
     <state width="1038" height="924" key="GridCell.Tab.1.center/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364891" />
-    <state width="1038" height="552" key="GridCell.Tab.1.left" timestamp="1613856081283">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.1.left" timestamp="1614105030160">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.1.left/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030160" />
+    <state width="1878" height="403" key="GridCell.Tab.1.left/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006765" />
     <state width="1038" height="552" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081283" />
     <state width="1398" height="749" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1613695300208" />
     <state width="1038" height="924" key="GridCell.Tab.1.left/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364886" />
-    <state width="1038" height="552" key="GridCell.Tab.1.right" timestamp="1613856081292">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.1.right" timestamp="1614105030167">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.1.right/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030167" />
+    <state width="1878" height="403" key="GridCell.Tab.1.right/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006772" />
     <state width="1038" height="552" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081292" />
     <state width="1398" height="749" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1613695300211" />
     <state width="1038" height="924" key="GridCell.Tab.1.right/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364895" />
-    <state width="1038" height="552" key="GridCell.Tab.2.bottom" timestamp="1613856081312">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.2.bottom" timestamp="1614105030186">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.2.bottom/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030186" />
+    <state width="1878" height="403" key="GridCell.Tab.2.bottom/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006805" />
     <state width="1038" height="552" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081312" />
     <state width="1398" height="749" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613695300220" />
     <state width="1038" height="924" key="GridCell.Tab.2.bottom/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364918" />
-    <state width="1038" height="552" key="GridCell.Tab.2.center" timestamp="1613856081304">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.2.center" timestamp="1614105030180">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.2.center/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030180" />
+    <state width="1878" height="403" key="GridCell.Tab.2.center/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006788" />
     <state width="1038" height="552" key="GridCell.Tab.2.center/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081304" />
     <state width="1398" height="749" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1613695300216" />
     <state width="1038" height="924" key="GridCell.Tab.2.center/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364908" />
-    <state width="1038" height="552" key="GridCell.Tab.2.left" timestamp="1613856081300">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.2.left" timestamp="1614105030175">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.2.left/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030175" />
+    <state width="1878" height="403" key="GridCell.Tab.2.left/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006785" />
     <state width="1038" height="552" key="GridCell.Tab.2.left/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081300" />
     <state width="1398" height="749" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1613695300215" />
     <state width="1038" height="924" key="GridCell.Tab.2.left/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364904" />
-    <state width="1038" height="552" key="GridCell.Tab.2.right" timestamp="1613856081308">
-      <screen x="1440" y="-1100" width="1080" height="1920" />
+    <state width="1878" height="403" key="GridCell.Tab.2.right" timestamp="1614105030183">
+      <screen x="-480" y="-1080" width="1920" height="1080" />
     </state>
+    <state width="1878" height="403" key="GridCell.Tab.2.right/-480.-1080.1920.1080/0.0.1440.900/1440.-1559.1080.1920@-480.-1080.1920.1080" timestamp="1614105030183" />
+    <state width="1878" height="403" key="GridCell.Tab.2.right/-480.-1080.1920.1080/0.23.1440.804/1440.-1536.1080.1897@-480.-1080.1920.1080" timestamp="1614095006802" />
     <state width="1038" height="552" key="GridCell.Tab.2.right/0.0.1440.900/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613856081308" />
     <state width="1398" height="749" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1613695300218" />
     <state width="1038" height="924" key="GridCell.Tab.2.right/0.22.1440.805/1440.-1100.1080.1920@1440.-1100.1080.1920" timestamp="1613798364913" />

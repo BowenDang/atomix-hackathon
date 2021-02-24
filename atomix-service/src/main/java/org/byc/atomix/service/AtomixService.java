@@ -43,10 +43,11 @@ public class AtomixService {
   public AtomixService(@Value("${atomix.service.host}") String host,
                        @Value("${atomix.service.port}") int port,
                        @Value("${atomix.publisher.port}") int publisherPort,
-                       @Value("${atomix.service.name}") String name) {
+                       @Value("${atomix.service.name}") String name,
+                       @Value("${atomix.node.id}") String id) {
 
     this.serviceName = name;
-    this.nodeId = name + "-" + UUID.randomUUID();
+    this.nodeId = name + "-" + id;
 
     this.rand = new SecureRandom();
 

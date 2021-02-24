@@ -88,7 +88,7 @@ public class AtomixPublisher {
           }
         });
 
-    scheduler.schedule(() -> publishIfDemoBegins(scheduler, changeRandomizer), 2, TimeUnit.SECONDS);
+    scheduler.schedule(() -> publishIfDemoBegins(scheduler, changeRandomizer), 100, TimeUnit.MILLISECONDS);
   }
 
   private void publishRandomEvent(SecureRandom changeRandomizer) {

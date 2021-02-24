@@ -1,24 +1,79 @@
 <!DOCTYPE HTML>
-
 <html>
-<head>
+    <head>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/atomix-view.js"></script>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/atomix-view.js"></script>
+        <style>
+            .example {
+                margin: auto;
+            }
 
-</head>
+            #cluster {
+                width: 50%;
+            }
 
-<body>
-<div id = "sse">
-    <a href = "javascript:WebSocketTest()">Run WebSocket</a>
-</div>
+            #table {
+                width: 80%;
+            }
 
-<button onclick="start();">start</button>
-<button onclick="restart();">restart</button>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
 
-<div id="state">
-<b>idle</b>
-</div>
+            table #top-header {
+                font-size: 22px;
+            }
 
-</body>
+            table .node-name {
+                font-weight: bold;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                padding: 8px;
+            }
+
+            th {
+                text-align: center;
+            }
+
+            #cluster-canvas {
+                text-align: center;
+                margin-bottom: 35px;
+            }
+
+            .service-cluster {
+                display: inline-block;
+                margin: 15px 10px;
+            }
+
+            .publisher {
+                animation-name: disappear;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            /* Animations */
+            @keyframes disappear {
+                0%   {background-color: yellow; opacity: 1;}
+                25%  {background-color: yellow; opacity: 0.75;}
+                50%  {background-color: yellow; opacity: 0.5;}
+                75%  {background-color: yellow; opacity: 0.25;}
+                100% {background-color: yellow; opacity: 0;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="start();">Start</button>
+            <button onclick="restart();">Restart</button>
+        </div>
+
+        <div class="example" id="cluster"></div>
+        <div class="example" id="table"></div>
+    </body>
 </html>
