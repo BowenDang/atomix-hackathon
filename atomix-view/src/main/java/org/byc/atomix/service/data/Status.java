@@ -8,6 +8,7 @@ import java.util.Map;
 public class Status {
     List<ServiceNode> nodes;
     Map<Integer, String> event;
+    Map<String, String> queues;
 
     public List<ServiceNode> getNodes() {
         return nodes;
@@ -27,9 +28,19 @@ public class Status {
         return this;
     }
 
+    public Map<String, String> getQueues() {
+        return queues;
+    }
+
+    public Status setQueues(Map<String, String> queues) {
+        this.queues = queues;
+        return this;
+    }
+
     public static final class StatusBuilder {
         List<ServiceNode> nodes;
         Map<Integer, String> event;
+        Map<String, String> queues;
 
         private StatusBuilder() {
         }
@@ -48,10 +59,16 @@ public class Status {
             return this;
         }
 
+        public StatusBuilder queues(Map<String, String> queues) {
+            this.queues = queues;
+            return this;
+        }
+
         public Status build() {
             Status status = new Status();
             status.setNodes(nodes);
             status.setEvent(event);
+            status.setQueues(queues);
             return status;
         }
     }

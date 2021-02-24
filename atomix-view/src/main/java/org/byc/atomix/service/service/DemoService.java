@@ -1,6 +1,14 @@
 package org.byc.atomix.service.service;
 
+import com.google.common.collect.ImmutableMap;
 import io.atomix.cluster.Member;
+import io.atomix.core.map.AtomicMap;
+import io.atomix.core.set.DistributedSet;
+import io.atomix.core.value.AtomicValue;
+import io.atomix.core.workqueue.WorkQueue;
+import io.atomix.primitive.protocol.ProxyProtocol;
+import io.atomix.protocols.raft.MultiRaftProtocol;
+import io.atomix.protocols.raft.ReadConsistency;
 import org.byc.atomix.service.AtomixView;
 import org.byc.atomix.service.data.ServiceNode;
 import org.byc.atomix.service.data.Status;
@@ -13,6 +21,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 public class DemoService {
@@ -31,7 +40,11 @@ public class DemoService {
 
     ArrayList<ServiceNode> nodes = new ArrayList<>();
 
-    atomixView.getNode().<String>getSet(REGISTRATION_SET_SERVICE_NAME).forEach(nodeId -> {
+    DistributedSet<String> set = atomixView.getNode().<String>setBuilder(REGISTRATION_SET_SERVICE_NAME)
+        .withProtocol(protocol())
+        .build();
+
+    set.forEach(nodeId -> {
 
       // TODO build status for active nodes
       Member node = null;
@@ -47,40 +60,51 @@ public class DemoService {
         String serviceName = nodeId.split("-")[0];
         nodeBuilder.serviceName(serviceName);
         String serviceDataStore = serviceName + "-datastore";
-        Map<Integer, String> dataStore = atomixView.getNode().<Integer, String>getAtomicMap(serviceDataStore)
+        AtomicMap<Integer, String> map = atomixView.getNode().<Integer, String>atomicMapBuilder(serviceDataStore)
+            .withProtocol(protocol())
+            .build();
+        Map<Integer, String> dataStore = map
             .entrySet().stream().collect(Collectors.toMap(Map.Entry::getKey, v -> v.getValue().value()));
         nodeBuilder.sources(dataStore);
       }
 
       nodes.add(nodeBuilder.build());
     });
-    Map<Integer, String> events = atomixView.getNode().<Integer, String>getAtomicMap(LOCATION_CHANGE_EVENT_MAP)
+    AtomicMap<Integer, String> lcMap = atomixView.getNode().<Integer, String>atomicMapBuilder(LOCATION_CHANGE_EVENT_MAP)
+        .withProtocol(protocol())
+        .build();
+    Map<Integer, String> events = lcMap
         .entrySet().stream().collect(Collectors.toMap(Map.Entry::getKey, v -> v.getValue().value()));
     nodes.sort(Comparator.comparing(ServiceNode::getNodeId));
+
 
     return Status.StatusBuilder.aStatus()
         .nodes(nodes)
         .event(events)
+        .queues(atomixView.getWorkQueue())
         .build();
   }
 
   public void startPublish() {
 
-    atomixView.getNode().<Boolean>getAtomicValue(DEMO_STARTED)
-        .async()
+    AtomicValue<Boolean> started = atomixView.getNode().<Boolean>atomicValueBuilder(DEMO_STARTED).withProtocol(protocol()).build();
+    started.async()
         .set(true);
   }
 
   public void restart() {
     // stop publishing
-    atomixView.getNode().<Boolean>getAtomicValue(DEMO_STARTED)
-        .async()
+    AtomicValue<Boolean> started = atomixView.getNode().<Boolean>atomicValueBuilder(DEMO_STARTED).withProtocol(protocol()).build();
+    started.async()
         .set(false);
 
     // TODO init all the primitives
 
     // removed unregisted service
-    Set<String> nodes = atomixView.getNode().<String>getSet(REGISTRATION_SET_SERVICE_NAME).stream().collect(Collectors.toSet());
+    DistributedSet<String> set = atomixView.getNode().<String>setBuilder(REGISTRATION_SET_SERVICE_NAME)
+        .withProtocol(protocol())
+        .build();
+    Set<String> nodes = set.stream().collect(Collectors.toSet());
     for (String nodeId : nodes) {
       Member node = null;
       try {
@@ -89,11 +113,14 @@ public class DemoService {
         // wrap getMember NPE
       }
       if (null == node) {
-        atomixView.getNode().<String>getSet(REGISTRATION_SET_SERVICE_NAME).remove(nodeId);
+        set.remove(nodeId);
       }
       String serviceName = nodeId.split("-")[0];
       String serviceDataStore = serviceName + "-datastore";
-      atomixView.getNode().<Integer, String>getAtomicMap(serviceDataStore).clear();
+      AtomicMap<Integer, String> map = atomixView.getNode().<Integer, String>atomicMapBuilder(serviceDataStore)
+          .withProtocol(protocol())
+          .build();
+      map.clear();
     }
 
     // add registed services
@@ -103,13 +130,22 @@ public class DemoService {
       if (splitted.length == 2) {
         String serviceName = splitted[0];
         String serviceDataStore = serviceName + "-datastore";
-        atomixView.getNode().<Integer, String>getAtomicMap(serviceDataStore).clear();
-        atomixView.getNode().<String>getSet(REGISTRATION_SET_SERVICE_NAME).add(nodeId);
+        AtomicMap<Integer, String> map = atomixView.getNode().<Integer, String>atomicMapBuilder(serviceDataStore)
+            .withProtocol(protocol())
+            .build();
+        map.clear();
+        set.add(nodeId);
       }
     });
 
 
     logger.info("Restart completed");
 
+  }
+
+  private ProxyProtocol protocol() {
+    MultiRaftProtocol protocol = MultiRaftProtocol.builder("data")
+        .withReadConsistency(ReadConsistency.LINEARIZABLE).build();
+    return protocol;
   }
 }

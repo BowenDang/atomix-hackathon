@@ -47,7 +47,7 @@ public class ServerWebSocketHandler extends TextWebSocketHandler implements SubP
         sessions.remove(session);
     }
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 100)
     void sendPeriodicMessages() throws IOException {
         for (WebSocketSession session : sessions) {
             if (session.isOpen()) {
