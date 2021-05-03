@@ -24,7 +24,7 @@ This is an example of Atomix framework presented as a demo to mock the service s
   Each running service application has its unique memberId in the format of serviceName-UUID. For all service applications with the same serviceName, they share the following resource:
   1. DataStore, simple map structure of location-source pair. Naming rule: serviceName-datastore
   2. AtomicLock, to make sure only one replica of the service is processing the change event. Naming rule: serviceName-lock
-  On updating datastore, service node has 1/1000 chance of failure to test the fault-tolerant feature. 
+  On updating datastore, service node has 1/100 chance of failure to test the fault-tolerant feature. 
 
 
 
